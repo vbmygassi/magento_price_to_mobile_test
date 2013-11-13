@@ -6,6 +6,8 @@ $readln = fopen("php://stdin", "r");
 
 $val = fgets($readln);
 
+print "\n";
+
 $val = (float)$val;
 print "(float) > " . $val . "\n";
 
@@ -17,6 +19,7 @@ print " (*100) > " . $val . "\n";
 
 // Falsch: ! 24.99 -> 24.99 jedoch 19.99 -> 19.98
 // Ebenso 16.99, 17.99, 18.99
+// und 34.66
 // PHP 5.3.26 (cli) (built: Jul  7 2013 19:05:08) 
 // ---------------------------------------------- 
 $val = (int)$val;
